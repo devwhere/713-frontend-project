@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ name: string }>()
+withDefaults(defineProps<{ name: string }>(), { name: 'Default name' })
 </script>
 <template>
   <div class="event-card">
